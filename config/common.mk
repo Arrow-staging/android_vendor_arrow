@@ -97,6 +97,9 @@ SYSTEMUI_OPTIMIZE_JAVA ?= true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Addons
+$(call inherit-product, vendor/addons/config.mk)
+
 # Bootanimation
 include vendor/arrow/config/bootanimation.mk
 
